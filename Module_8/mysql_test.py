@@ -3,7 +3,7 @@ from mysql.connector import errorcode
 
 config = {
     "user": "pysports_user",
-    "password": "Andrew",
+    "password": "MySQL8IsGreat!",
     "host": "localhost",
     "database": "pysports",
     "raise_on_warnings": True
@@ -30,6 +30,5 @@ except mysql.connector.Error as err:
     else:
         print(err)
 
-finally:
 
-    db.close()
+
