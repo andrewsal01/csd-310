@@ -2,7 +2,7 @@ import mysql.connector
 from mysql.connector import errorcode
 
 
-""" database config object """
+
 config = {
     "user": "pysports_user",
     "password": "MySQL8IsGreat!",
@@ -70,7 +70,7 @@ try:
     input("\n\n  Press any key to continue... ")
 
 except mysql.connector.Error as err:
-    """ handle errors """ 
+    
 
     if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
         print("  The supplied username or password are invalid")
